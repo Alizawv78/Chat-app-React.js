@@ -5,7 +5,6 @@ import Login from "./Components/Login";
 import Chats from "./Components/Chats";
 //context
 import AuthContextProvider from "./contexts/AuthContextProvider";
-
 function App() {
   return (
     <div className="App">

@@ -16,7 +16,6 @@ const AuthContextProvider = ({ children }) => {
       if (user) history.push("/chats");
     });
   }, [user, history]);
-
   return ( 
   <AuthContext.Provider value={user}>
     {!loading && children}

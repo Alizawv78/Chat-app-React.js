@@ -53,14 +53,11 @@ const Chats = () => {
     const data = await response.blob();
     return new File([data], "userPhoto.jpg", { type: "image.jpeg" });
   };
-
   const logoutHandler = async () => {
     await auth.signOut();
     history.push("/");
   };
-
   if (!user || loading) return "Loading...";
-
   return (
     <div>
       <Navbar logoutHandler={logoutHandler} />

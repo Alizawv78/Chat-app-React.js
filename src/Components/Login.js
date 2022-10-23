@@ -7,7 +7,6 @@ import styles from "./Login.module.css"
 import firebase from 'firebase';
 import { auth } from '../firebase';
 
-
 const Login = () => {
     return (
         <div className={styles.container}>
